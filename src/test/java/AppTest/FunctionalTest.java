@@ -14,4 +14,16 @@ public class FunctionalTest extends DriverSetup {
         driver.findElement(By.className("gLFyf")).sendKeys(Keys.ENTER);
     }
 
+    @Test
+    public void signInToGamil()
+    {
+        driver.findElement(By.className("gb_ke")).click();
+        driver.findElement(By.className("whsOnd")).sendKeys("nyang@gmail.com");
+        driver.findElement(By.className("VfPpkd-RLmnJb")).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
